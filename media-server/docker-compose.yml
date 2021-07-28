@@ -37,7 +37,7 @@ services:
   #   restart: unless-stopped
 
   plex:
-    image: ghcr.io/linuxserver/plex:arm32v7-1.22.1.4275-48e10484b-ls39
+    image: ghcr.io/linuxserver/plex:arm32v7-1.23.5.4862-0f739d462-ls64
     container_name: plex
     network_mode: host
     hostname: plex
@@ -95,7 +95,7 @@ services:
     restart: unless-stopped
 
   jackett:
-    image: ghcr.io/linuxserver/jackett:arm32v7-v0.17.841-ls26
+    image: ghcr.io/linuxserver/jackett:arm32v7-v0.18.475-ls37
     container_name: jackett
     hostname: jackett
     domainname: ${MY_DOMAINNAME}
@@ -111,7 +111,7 @@ services:
     restart: unless-stopped
 
   qbittorrent:
-    image: ghcr.io/linuxserver/qbittorrent:arm32v7-14.3.4.99202104031018-7348-2b6baa609ubuntu20.04.1-ls125
+    image: ghcr.io/linuxserver/qbittorrent:arm32v7-14.3.6.99202107121017-7389-3ac8c97e6ubuntu20.04.1-ls147
     container_name: qbittorrent
     hostname: qbittorrent
     domainname: ${MY_DOMAINNAME}
@@ -148,7 +148,7 @@ services:
   #   restart: unless-stopped
 
   radarr:
-    image: ghcr.io/linuxserver/radarr:arm32v7-3.0.2.4552-ls97
+    image: ghcr.io/linuxserver/radarr:arm32v7-3.2.2.5080-ls110
     container_name: radarr
     hostname: radarr
     domainname: ${MY_DOMAINNAME}
@@ -166,7 +166,7 @@ services:
     restart: unless-stopped
 
   sonarr:
-    image: ghcr.io/linuxserver/sonarr:arm32v7-3.0.6.1196-ls100
+    image: ghcr.io/linuxserver/sonarr:arm32v7-3.0.6.1265-ls113
     container_name: sonarr
     hostname: sonarr
     domainname: ${MY_DOMAINNAME}
@@ -201,7 +201,7 @@ services:
   #   restart: unless-stopped
 
   bazarr:
-    image: ghcr.io/linuxserver/bazarr:arm32v7-v0.9.3-ls109
+    image: ghcr.io/linuxserver/bazarr:arm32v7-v0.9.6-ls123
     container_name: bazarr
     hostname: bazarr
     domainname: ${MY_DOMAINNAME}
